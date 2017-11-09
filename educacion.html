@@ -3,26 +3,92 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, auto-scalable=no">
-	<title>Hoja de Vida</title>
+	<title>Hoja de Vida de Luis Amigo : Educacion</title>
 </head>
 <body>
-<p>Aqui va un logo con Iniciales, formato SVG</p>
-<p>Titulo</p>
-<p>Datos Personales</p>
-<p>enlaces de Menu, para las paginas
+	<header>
+		<svg id="circle" height="120" width="150" 
+     	xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+  			<image x="0" y="0" height="120" width="160"  xlink:href="imagenes/Logo.svg" />
+		</svg>
+<h1>Hoja de Vida</h1>
+<h2>Luis Amigo</h2>
+	</header>
+<ul>
+	<a href="index.html"><li>Inicio</li></a>
+	<a href="educacion.html"><li>Educacion</li></a>
+	<a href="experiencia.html"><li>Experiencia</li></a>
+</ul>
 <h2>Educacion</h2>
-<p>Tabla con datos educacionales</p>
-<p>Los titulos son</p>
-<p>Año</p>
-<p>Institucion</p>
-<p>Lugar</p>
-<p>¿Culmino?</p>
-<p>Agregar Estudios</p>
-<p>Año</p>
-<p>Institucion</p>
-<p>Lugar</p>
-<p>¿Culmino?</p>
-<p>Boton Submit con Value "Enviar"</p>
-<p>Pie de pagina</p>
+<table border="1" cellspacing="0">
+	<tr>
+		<th>Año</th>
+		<th>Institucion</th>
+		<th>Lugar</th>
+		<th>¿Culmino?</th>
+	</tr>
+	<tr>
+		<td>1992</td>
+		<td>Escuelita Pequeña</td>
+		<td>Santiago</td>
+		<td>Si</td>
+	</tr>
+	<tr>
+		<td>2000</td>
+		<td>Escuelita mediana</td>
+		<td>Santiago</td>
+		<td>Si</td>
+	</tr>
+</table>
+<hr/>
+<h2>Agregar Estudios</h2>
+<form>
+	<label for="Agno">
+	Año: </label><select>
+			<option>2000</option>
+			<option>2001</option>
+			<option>2002</option>
+			<option>2003</option>
+			<option>2004</option>
+			<option>2005</option>
+			<option>2006</option>
+			<option>2007</option>
+			<option>2008</option>
+			<option>2009</option>
+			<option>2010</option>
+			<option>2011</option>
+			<option>2012</option>
+			<option>2013</option>
+			<option>2014</option>
+			<option>2015</option>
+			<option>2016</option>
+			<option>2017</option>
+	</select>
+	<br/>
+	<br/>
+	<label for="Institucion">Institucion: </label><input id="institucion_id" type="text" name="Institucion" required="" /> 
+	<br/>
+	<br/>
+	<label for="Lugar">Lugar: </label><textarea name="textarea" rows="10" cols="50"></textarea>
+	<br/>
+	<br/>
+	<label for="Culmino">¿Culmino?</label>
+	<b>Si</b><input type="radio" name="Culmino">
+	<b>No</b><input type="radio" name="Culmino">
+	<br/>
+	<br/>
+	<input type="submit" name="Submit">
+</form>
+	<br/>
+	<br/>
+		<footer>
+				&copy; Derechos Reservados
+				<br/>
+				<ul>
+					<li><strong>Email :</strong> <a href="mailto:correo@correo.cl">correo@correo.cl</a>  </li>
+					<li><strong>Telefono :</strong> 555-555-5555</li>
+					<li><strong>Direccion :</strong> Hugo Saavedra 1234, Esquinita, Region Metropolitana, Chile</li>
+				</ul>
+		</footer>
 </body>
 </html>
